@@ -51,7 +51,7 @@ public class BinaryTreeLinked {
 		}
 	}
 
-	private static void zigzag(Node tree) {
+	static void zigzag(Node tree) {
 		Queue<Node> q = new LinkedList<>();
 		boolean backward = true;
 		Map<Node, Integer> nodeLevel = new HashMap<>();
@@ -100,7 +100,7 @@ public class BinaryTreeLinked {
 		}
 	}
 
-	private static void bfs(Node tree) {
+	static void bfs(Node tree) {
 		Queue<Node> q = new LinkedList<>();
 		q.add(tree);
 		do {
@@ -114,7 +114,7 @@ public class BinaryTreeLinked {
 		} while (!q.isEmpty());
 	}
 
-	private static void dfs(Node tree) {
+	static void dfs(Node tree) {
 		if (null == tree) {
 			return;
 		}
@@ -123,7 +123,7 @@ public class BinaryTreeLinked {
 		dfs(tree.right);
 	}
 
-	private static void postorder(Node tree) {
+	static void postorder(Node tree) {
 		if (null == tree) {
 			return;
 		}
@@ -132,7 +132,7 @@ public class BinaryTreeLinked {
 		System.out.print(tree.val + " ");
 	}
 
-	private static void inOrder(Node tree) {
+	static void inOrder(Node tree) {
 		if (null == tree) {
 			return;
 		}
@@ -141,7 +141,7 @@ public class BinaryTreeLinked {
 		inOrder(tree.right);
 	}
 
-	private static void preOrder(Node tree) {
+	static void preOrder(Node tree) {
 		if (null == tree) {
 			return;
 		}
